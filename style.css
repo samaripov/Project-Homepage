@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   max-width: 500vw;
 }
-.container img {
+header img {
   position: relative;
   min-height: 83vh;
   max-height: 82vh;
@@ -15,11 +15,11 @@ body {
   transform: translate(7vw, 8vh);
   box-shadow: 0.3vh 0.5vh 1vh rgba(100, 100, 100, 0.523);
 }
-.container {
+header {
   width: 100%;
   display: flex;
 }
-.container > h1 {
+header > h1 {
   position: absolute;
   font-size: 4.5vw;
   z-index: 3;
@@ -58,7 +58,7 @@ body {
 .text_box img {
   display: none;
 }
-.text_box h1 {
+  h1 {
   font-size: 7vh;
   font-family: "Playfair Display", serif;
   font-weight: 100;
@@ -93,7 +93,7 @@ body {
 
 /* Medium Screens/iPad size */
 @media screen and (600px < width <= 850px) {
-  .container img {
+  header img {
     min-height: 58vh;
     max-height: 58vh;
     min-width: 45vw;
@@ -134,7 +134,7 @@ body {
   .tilt {
     transform: skewY(-18deg) translateY(-63vh);
   }
-  .container > h1 {
+  header > h1 {
     font-size: 7vw;
     transform: translateX(42vw);
   }
@@ -142,18 +142,18 @@ body {
 
 /* Mobile/Smartphone size */
 @media screen and (max-width: 600px) {
-  .container {
+  header {
     flex-direction: column;
   }
-  .container img {
-    min-height: 68vh;
-    max-height: 68vh;
+  header img {
+    min-height: 75vh;
+    max-height: 75vh;
     min-width: 86vw;
     max-width: 86vw;
   }
-  .container > h1 {
+  header > h1 {
     font-size: 10vw;
-    transform: translate(12vw, 63vh);
+    transform: translate(12vw, 70vh);
   }
   .text_box {
     margin-block-start: 10vh;
@@ -161,12 +161,11 @@ body {
     box-shadow: none;
   }
   .text_box .icons {
-    gap: 10vw;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
   .text_box svg {
-    max-height: 5vh;
+    max-height: 10vh;
   }
   .text_box h1 {
     margin-block-start: 0;
