@@ -5,6 +5,7 @@ body {
   max-width: 500vw;
 }
 .container img {
+  position: relative;
   min-height: 83vh;
   max-height: 82vh;
   min-width: 37vw;
@@ -54,7 +55,9 @@ body {
   background: white;
   box-shadow: 0.2vh 0.4vh 1vh rgba(145, 145, 145, 0.724);
 }
-
+.text_box img {
+  display: none;
+}
 .text_box h1 {
   font-size: 7vh;
   font-family: "Playfair Display", serif;
@@ -88,14 +91,56 @@ body {
   justify-content: end;
 }
 
-@media screen and (650px < width <= 950px) {
-  .blue_box {
-    background: pink;
+/* Medium Screens/iPad size */
+@media screen and (600px < width <= 850px) {
+  .container img {
+    min-height: 58vh;
+    max-height: 58vh;
+    min-width: 45vw;
+    max-width: 45vw;
+    transform: translate(4.5vw, 6vh);
+  }
+  .text_box {
+    float: left;
+    position: absolute;
+    margin-inline: 10vw;
+  }
+  .text_box img {
+    float: left;
+    padding-inline-end: 8vw;
+    padding-block-end: 6.5vh;
+    display: block;
+    min-height: 40vh;
+    max-height: 40vh;
+    min-width: 25.5vw;
+    max-width: 25.5vw;
+    box-shadow: none;
+  }
+  .text_box h1 {
+    margin-block-start: 8vh;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .text_box p {
+    font-size: 2.5vw;
+    font-weight: 300;
+    line-height: 4vh;
+    margin-block-end: 3vh;
+  }
+  .text_box .icons {
+    justify-content: center;
+  }
+  .tilt {
+    transform: skewY(-18deg) translateY(-63vh);
+  }
+  .container > h1 {
+    font-size: 7vw;
+    transform: translateX(42vw);
   }
 }
 
 /* Mobile/Smartphone size */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .blue_box {
     background: yellow;
   }
