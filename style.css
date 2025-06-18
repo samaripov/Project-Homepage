@@ -3,6 +3,32 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container img {
+  min-height: 37rem;
+  max-height: 38rem;
+  min-width: 34rem;
+  max-width: 34rem;
+  object-fit: cover;
+  z-index: 2;
+  transform: translate(6.5rem, 4rem);
+  box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.523);
+}
+.container {
+  width: 100%;
+  display: flex;
+}
+.container > h1 {
+  position: absolute;
+  font-size: 400%;
+  z-index: 3;
+  font-weight: 100;
+  text-shadow: 3px 3px 5px rgba(79, 79, 79, 0.58);
+  transform: translate(8rem, 33rem);
+}
+.white-txt {
+  color: white;
+  font-family: "Playfair Display", serif;
+}
 .blue_box {
   position: absolute;
   top: 0;
@@ -18,12 +44,12 @@ body {
 }
 
 .text_box {
-  padding: 15rem 3.5rem 0rem 6.5rem;
-  margin: 9rem 6rem 0rem 40%;
+  padding: 15rem 3.5rem 0 6.5rem;
+  margin: 8rem 6rem 0 2rem;
   padding-block: 1rem;
   z-index: 1;
   background: white;
-  box-shadow: 3px 3px 15px rgb(149, 149, 149);
+  box-shadow: 3px 3px 15px rgba(145, 145, 145, 0.724);
 }
 
 .text_box h1 {
