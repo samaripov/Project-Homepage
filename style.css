@@ -20,7 +20,7 @@ body {
 }
 .container > h1 {
   position: absolute;
-  font-size: 9vh;
+  font-size: 4.5vw;
   z-index: 3;
   font-weight: 100;
   text-shadow: 0vh 0.8vh 1vh rgba(79, 79, 79, 0.58);
@@ -66,8 +66,8 @@ body {
 
 .text_box p {
   margin-block-end: 7vh;
-  font-weight: 350;
-  font-size: 3.4vh;
+  font-weight: 300;
+  font-size: 1.7vw;
   line-height: 5vh;
   color: rgb(89, 88, 88);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -86,4 +86,17 @@ body {
   gap: 2vw;
   display: flex;
   justify-content: end;
+}
+
+@media screen and (650px < width <= 950px) {
+  .blue_box {
+    background: pink;
+  }
+}
+
+/* Mobile/Smartphone size */
+@media screen and (max-width: 650px) {
+  .blue_box {
+    background: yellow;
+  }
 }
