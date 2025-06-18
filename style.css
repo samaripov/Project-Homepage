@@ -129,6 +129,7 @@ body {
   }
   .text_box .icons {
     justify-content: center;
+    gap: 5vh;
   }
   .tilt {
     transform: skewY(-18deg) translateY(-63vh);
@@ -141,7 +142,40 @@ body {
 
 /* Mobile/Smartphone size */
 @media screen and (max-width: 600px) {
-  .blue_box {
-    background: yellow;
+  .container {
+    flex-direction: column;
+  }
+  .container img {
+    min-height: 68vh;
+    max-height: 68vh;
+    min-width: 86vw;
+    max-width: 86vw;
+  }
+  .container > h1 {
+    font-size: 10vw;
+    transform: translate(12vw, 63vh);
+  }
+  .text_box {
+    margin-block-start: 10vh;
+    background: none;
+    box-shadow: none;
+  }
+  .text_box .icons {
+    gap: 10vw;
+    width: 100%;
+    justify-content: center;
+  }
+  .text_box svg {
+    max-height: 5vh;
+  }
+  .text_box h1 {
+    margin-block-start: 0;
+    text-align: center;
+  }
+  .text_box p {
+    font-size: 5vw;
+  }
+  .tilt {
+    transform: skewY(-25deg) translateY(-63vh);
   }
 }
