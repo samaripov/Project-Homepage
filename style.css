@@ -229,6 +229,9 @@ main {
     font-size: 10vw;
     transform: translate(12vw, 70vh);
   }
+  main {
+    margin-block-start: 4vh;
+  }
   .cards {
     grid-template-columns: repeat(1, auto);
   }
